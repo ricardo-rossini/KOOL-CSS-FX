@@ -37,7 +37,6 @@ section p{
     top: 0;
     right: 0;
     width: 10px;
-    height: 100%;
     background: linear-gradient(to top, #008aff, #00ffe7);
     animation: animate 5s linear infinite;
 }
@@ -61,4 +60,16 @@ section p{
     width: 100%;
     height: 100%;
     background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
+}
+
+#progressbar:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
 }

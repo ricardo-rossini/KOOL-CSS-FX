@@ -41,6 +41,27 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam doloremque dolor, 
             laborum voluptatum assumenda impedit illum commodi temporibus tenetur culpa necessitatibus 
             maxime voluptates libero fugit tempore dolorem, neque adipisci odio!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam doloremque dolor, 
+            laborum voluptatum assumenda impedit illum commodi temporibus tenetur culpa necessitatibus 
+            maxime voluptates libero fugit tempore dolorem, neque adipisci odio!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam doloremque dolor, 
+            laborum voluptatum assumenda impedit illum commodi temporibus tenetur culpa necessitatibus 
+            maxime voluptates libero fugit tempore dolorem, neque adipisci odio!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam doloremque dolor, 
+            laborum voluptatum assumenda impedit illum commodi temporibus tenetur culpa necessitatibus 
+            maxime voluptates libero fugit tempore dolorem, neque adipisci odio!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam doloremque dolor, 
+            laborum voluptatum assumenda impedit illum commodi temporibus tenetur culpa necessitatibus 
+            maxime voluptates libero fugit tempore dolorem, neque adipisci odio!</p>
     </section>
+
+    <script>
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
 </body>
 </html>
