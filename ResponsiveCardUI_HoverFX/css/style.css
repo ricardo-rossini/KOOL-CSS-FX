@@ -18,7 +18,7 @@ body{
 
 img{
     width: 300px;
-    height: 300px;
+    height: 290px;
 }
 
 .box{
@@ -29,6 +29,7 @@ img{
     justify-content: center;
     align-items: center;
     margin: 40px;
+    background: #060c21;
     transition: 0.5s;
 }
 
@@ -79,4 +80,54 @@ img{
     background: #fff;
     z-index: -2;
     filter: blur(40px);
+}
+
+.box::before,
+.box::after{
+    background: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
+}
+
+.box:nth-child(2):before,
+.box:nth-child(2):after{
+    background: linear-gradient(235deg, #ff005e, #010615, #fbff00);
+}
+
+.box:nth-child(3):before,
+.box:nth-child(3):after{
+    background: linear-gradient(235deg, #772aff, #010615, #2196F3);
+}
+
+.box .content{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 90px;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.box:hover .content{
+    opacity: 1;
+}
+
+.box .content h2{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.box .content h2 span{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 2px;
 }
