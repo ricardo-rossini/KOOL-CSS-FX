@@ -44,3 +44,13 @@ body{
     transform-origin: top;
     transform: perspective(500px) rotateX(-25deg);
 }
+
+.shadow{
+    position: absolute;
+    bottom: -90px;
+    left: 50%;
+    width: 95%;
+    transform: translateX(-50%);
+    height: 60px;
+    background: linear-gradient(#000, transparent);
+}
