@@ -47,10 +47,11 @@ body{
 
 .shadow{
     position: absolute;
-    bottom: -90px;
+    bottom: -92px;
     left: 50%;
     width: 95%;
     transform: translateX(-50%);
     height: 60px;
     background: linear-gradient(#000, transparent);
+    opacity: 0.5;
 }
