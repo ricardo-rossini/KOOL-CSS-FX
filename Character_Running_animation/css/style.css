@@ -32,6 +32,18 @@ body{
     height: 10px;
     background: linear-gradient(90deg, #fff 0%, #fff 70%, #525252 70%, #525252 100% );
     background-size: 120px;
+    animation: animateRoad 0.5s linear infinite;
+}
+
+@keyframes animateRoad{
+    0%
+    {
+        background-position: 120px;
+    }
+    100%
+    {
+        background-position: 0;
+    }
 }
 
 .infinite::after{
