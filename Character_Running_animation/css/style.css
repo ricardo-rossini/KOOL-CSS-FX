@@ -59,5 +59,18 @@ body{
 .girl{
     position: relative;
     height: 256px;
+    width: calc(1536px / 6);
     background: url(../img/spritestrip-1536.png);
+    transform: perspective(500px) rotateX(-25deg) translateY(-150px);
+    -webkit-box-reflect: below 1px linear-gradient(transparent 90%, #0004);
+    animation: animateGirl 1s steps(6) infinite;
+}
+
+@keyframes animateGirl{
+    from{
+        background-position: 1536px;
+    }
+    to{
+        background-position: 0;
+    }
 }
