@@ -16,6 +16,7 @@ body{
     position: relative;
     width: 600px;
     height: 600px;
+    filter: url(#wavy);
 }
 
 .circle::before{
@@ -74,4 +75,9 @@ body{
 
 .circle:nth-child(2)::before{
     animation-delay: -2.5s;
+}
+
+svg{
+    width: 0;
+    height: 0;
 }
