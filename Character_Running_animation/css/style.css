@@ -55,3 +55,9 @@ body{
     background: linear-gradient(#000, transparent);
     opacity: 0.5;
 }
+
+.girl{
+    position: relative;
+    height: 256px;
+    background: url(../img/spritestrip-1536.png);
+}
