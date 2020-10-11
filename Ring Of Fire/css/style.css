@@ -16,7 +16,7 @@ body{
     position: relative;
     width: 600px;
     height: 600px;
-    filter: url(#wavy);
+    filter: url(#wavy) blur(1px);
 }
 
 .circle::before{
@@ -33,6 +33,20 @@ body{
     -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0002);
     animation: animate 5s linear infinite;
 }
+
+.circle::after{
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    right: 100px;
+    bottom: 100px;
+    border: 20px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #fff,
+                inset 0 0 20px #fff;
+}
+
 
 @keyframes animate{
     0%
